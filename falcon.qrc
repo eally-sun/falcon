@@ -1,0 +1,26 @@
+<RCC>
+<qresource>
+    <file>res/images/logo.png</file>
+    <file>res/images/auto_conn.png</file>
+    <file>res/images/screenshot.png</file>
+    <file>res/images/config.png</file>
+    <file>res/images/setting.png</file>
+    <file>res/images/exit.png</file>
+    <file>res/images/about.png</file>
+    <file>res/images/desktop.png</file>
+    <file>res/images/connect.png</file>
+    <file>res/images/flux.png</file>
+    <file>res/images/process.png</file>
+    <file>res/images/control.png</file>
+    <file>res/images/cmd.png</file>
+    <file>res/images/group.png</file>
+    <file>res/images/computer_online.png</file>
+    <file>res/images/computer_offline.png</file>
+    <file>res/ico/main.ico</file>
+    <file>res/sound/upfile.wav</file>
+    <file>res/sound/downfile.wav</file>
+    <file>res/sound/login.wav</file>
+    <file>res/sound/offline.wav</file>
+    <file>res/language/qt_zh_CN.qm</file>
+</qresource>
+</RCC>
