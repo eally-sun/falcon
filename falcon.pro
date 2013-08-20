@@ -23,13 +23,15 @@ INCLUDEPATH += include
 HEADERS +=  include/MainWindow.h include/Debug.h include/LinkTreeWidget.h \
 			include/MainStackWidget.h include/ProcessTreeView.h include/FluxViewWidget.h \
 			include/LinkProcessWidget.h include/LinkCmdWidget.h include/LinkControlWidget.h \
-			include/MainListWidget.h include/ScreenViewWidget.h include/FluxWidget.h
+			include/MainListWidget.h include/ScreenViewWidget.h include/FluxWidget.h \
+			include/qcustomplot.h
 
 # code file
 SOURCES +=  src/Main.cpp src/MainWindow.cpp src/LinkTreeWidget.cpp \
 			src/MainStackWidget.cpp src/ProcessTreeView.cpp src/FluxViewWidget.cpp \
 			src/LinkProcessWidget.cpp src/LinkCmdWidget.cpp src/LinkControlWidget.cpp \
-			src/MainListWidget.cpp src/ScreenViewWidget.cpp src/FluxWidget.cpp
+			src/MainListWidget.cpp src/ScreenViewWidget.cpp src/FluxWidget.cpp \
+			src/qcustomplot.cpp
 
 # ui file
 FORMS += 

@@ -17,16 +17,15 @@
 #ifndef FLUXWIDGET_H_
 #define FLUXWIDGET_H_
 
-#include <QWidget>
+#include "qcustomplot.h"
 
-class FluxWidget : public QWidget
+class FluxWidget : public QCustomPlot
 {
 	Q_OBJECT
 
 public:
 	FluxWidget();
 	~FluxWidget();
-
 };
 
 #endif	// FLUXVIEWWIDGET_H_
