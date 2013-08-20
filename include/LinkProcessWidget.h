@@ -17,7 +17,7 @@
 #ifndef LINKPROCESSWIDGET_H_
 #define LINKPROCESSWIDGET_H_
 
-#include <QWidget>
+#include <QGroupBox>
 
 class QPushButton;
 class QVBoxLayout;
@@ -26,7 +26,7 @@ class FileTreeView;
 
 class ProcessTreeView;
 
-class LinkProcessWidget : public QWidget
+class LinkProcessWidget : public QGroupBox
 {
 	Q_OBJECT
 

@@ -17,7 +17,7 @@
 #ifndef LINKCMDWIDGET_H_
 #define LINKCMDWIDGET_H_
 
-#include <QWidget>
+#include <QGroupBox>
 
 class QTextEdit;
 class QLabel;
@@ -26,7 +26,7 @@ class QPushButton;
 class QVBoxLayout;
 class QHBoxLayout;
 
-class LinkCmdWidget : public QWidget
+class LinkCmdWidget : public QGroupBox
 {
 	Q_OBJECT
 

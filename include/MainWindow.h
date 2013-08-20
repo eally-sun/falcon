@@ -92,7 +92,6 @@ private:
 	QMenu *helpMenu;				// 主菜单-帮助子菜单指针
 
 	QToolBar *mainToolBar;			// 功能相关工具栏指针
-	QToolBar *aboutToolBar;			// 关于相关工具栏指针
 
 	QAction *auto_connAction;		// 自动上线
 	QAction *configAction;			// 服务端配置

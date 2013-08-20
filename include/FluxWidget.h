@@ -1,8 +1,8 @@
 // =====================================================================================
 // 
-//       Filename:  FluxViewWidget.h
+//       Filename:  FluxWidget.h
 //
-//    Description:  流量列表显示
+//    Description:  流量显示
 //
 //        Version:  1.0
 //        Created:  2013年08月17日 11时03分08秒
@@ -14,32 +14,19 @@
 // 
 // =====================================================================================
 
-#ifndef FLUXVIEWWIDGET_H_
-#define FLUXVIEWWIDGET_H_
+#ifndef FLUXWIDGET_H_
+#define FLUXWIDGET_H_
 
-#include <QGroupBox>
+#include <QWidget>
 
-class QHBoxLayout;
-class QVBoxLayout;
-class QLabel;
-class FluxWidget;
-
-class FluxViewWidget : public QGroupBox
+class FluxWidget : public QWidget
 {
 	Q_OBJECT
 
 public:
-	FluxViewWidget();
-	~FluxViewWidget();
+	FluxWidget();
+	~FluxWidget();
 
-	void resetFluxView();
-
-private:
-	QVBoxLayout *vBoxLayout;
-	QHBoxLayout *hBoxLayout;
-	QLabel *upLabel;
-	QLabel *downLabel;
-	FluxWidget *fluxView;
 };
 
 #endif	// FLUXVIEWWIDGET_H_

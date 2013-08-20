@@ -17,15 +17,32 @@
 #ifndef SCREENVIEWWIDGET_H_
 #define SCREENVIEWWIDGET_H_
 
-#include <QWidget>
+#include <QGroupBox>
 
-class ScreenViewWidget : public QWidget
+class QLabel;
+class QPixmap;
+class QPushButton;
+class QHBoxLayout;
+class QVBoxLayout;
+
+class ScreenViewWidget : public QGroupBox
 {
 	Q_OBJECT
 
 public:
 	ScreenViewWidget();
 	~ScreenViewWidget();
+public slots:
+	void screenShotNative();
+	void saveScreenShot();
+
+private:
+	QLabel *label;
+	QPixmap *originalPixmap;
+	QPushButton *screenButton;
+	QPushButton *saveButton;
+	QHBoxLayout *hBoxLayout;
+	QVBoxLayout *vBoxLayout;
 };
 
 #endif	// SCREENVIEWWIDGET_H_
