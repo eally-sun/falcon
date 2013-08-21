@@ -5,7 +5,7 @@
 //    Description:  命令管理标签 Widget
 //
 //        Version:  1.0
-//        Created:  2013年08月25日 17时48分05秒
+//        Created:  2013年08月21日 17时48分05秒
 //       Revision:  none
 //       Compiler:  cl
 //

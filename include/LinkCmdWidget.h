@@ -19,7 +19,7 @@
 
 #include <QGroupBox>
 
-class QTextEdit;
+class QTextBrowser;
 class QLabel;
 class QLineEdit;
 class QPushButton;
@@ -37,7 +37,7 @@ public:
 	void createMainWeiget();			// 创建主显示
 
 private:
-	QTextEdit *cmdTextEdit;				// cmd 输出显示窗口
+	QTextBrowser *cmdText;				// cmd 输出显示窗口
 	QLabel *cmdLabel;					// 命令输入标签
 	QLineEdit *cmdInputEdit;			// cmd 命令输入框
 	QPushButton *sendButton;			// 发送 cmd 命令按钮

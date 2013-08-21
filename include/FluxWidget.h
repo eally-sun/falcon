@@ -17,6 +17,7 @@
 #ifndef FLUXWIDGET_H_
 #define FLUXWIDGET_H_
 
+#include <QVector>
 #include "qcustomplot.h"
 
 class FluxWidget : public QCustomPlot
@@ -26,6 +27,23 @@ class FluxWidget : public QCustomPlot
 public:
 	FluxWidget();
 	~FluxWidget();
+
+	// 增加一个上传速率数据
+	void addUpSpeedData(double upSpeed);
+
+	// 增加一个下载速率数据
+	void addDownSpeedData(double downSpeed);
+
+private:
+	// 上传速率数据容器
+	QVector<double> upLineXVector;
+	QVector<double> upLineYVector;
+
+	// 下载速率数据容器
+	QVector<double> downLineXVector;
+	QVector<double> downLineYVector;
+
+	int fluxPonitCount;
 };
 
 #endif	// FLUXVIEWWIDGET_H_

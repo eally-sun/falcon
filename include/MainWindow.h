@@ -19,8 +19,6 @@
 
 #include <QMainWindow>
 
-#define FALCAN_TITLE tr(" Falcan -- Alpha 1")
-
 class QLabel;
 class QSplitter;
 class QMenu;

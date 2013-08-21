@@ -34,6 +34,9 @@ public:
 
 	void resetFluxView();
 
+public slots:
+	void updateFluxData();
+
 private:
 	QVBoxLayout *vBoxLayout;
 	QHBoxLayout *hBoxLayout;
