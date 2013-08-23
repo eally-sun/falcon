@@ -55,6 +55,7 @@ private slots:
 	void process();
 	void control();
 	void cmd();
+	void info();
 	void about();
 
 private:
@@ -100,6 +101,7 @@ private:
 	QAction *processAction; 		// 进程管理
 	QAction *controlAction; 		// 详细控制
 	QAction *cmdAction; 			// 远程命令
+	QAction *infoAction; 			// 信息查看
 
 	QAction *settingAction;			// 软件设置
 	QAction *minAction;				// 最小化窗口

@@ -36,12 +36,15 @@ public:
 	void addOneProcessItem(QString strProcess, QString strPID, QString strMem, 
 								QString strPart, QString strDes);
 
-	void setNowSelectProcess(QModelIndex &index);
-
 	QString getStrNowProcess();
+
+public slots:
+		void setNowSelectProcess(const QModelIndex &index);
+		void removeNowSelectProcess();
 
 private:
 	QStandardItemModel *mainModel;
+	QModelIndex nowSelectIndex;
 	QString strNowProcess;
 	int iPosition;
 };

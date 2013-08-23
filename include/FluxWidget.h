@@ -28,6 +28,9 @@ public:
 	FluxWidget();
 	~FluxWidget();
 
+	// 清空流量显示数据
+	void fluxDataClear();
+
 	// 增加一个上传速率数据
 	void addUpSpeedData(double upSpeed);
 

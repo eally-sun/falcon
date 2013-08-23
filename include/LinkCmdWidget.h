@@ -35,6 +35,7 @@ public:
 	~LinkCmdWidget();
 
 	void createMainWeiget();			// 创建主显示
+	void resetCmdTextBrowser(); 		// 重置CMD显示界面
 
 private:
 	QTextBrowser *cmdText;				// cmd 输出显示窗口
