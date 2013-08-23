@@ -32,3 +32,4 @@ Makefile.Debug
 *.suo
 *.pdb
 *.bat
+src.zip

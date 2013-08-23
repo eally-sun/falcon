@@ -18,6 +18,7 @@
 #define LINKTREEWIDGET_H_
 
 #include <QTreeWidget>
+#include <QString>
 
 class LinkTreeWidget : public QTreeWidget
 {
@@ -29,6 +30,11 @@ public:
 
 	bool addGroupItem(QString &strTitle);
 	bool addComputerItem(QString &strGroup, QString &strTitle, bool isOnline);
+
+	QString strNowSelectIP;
+
+public slots:
+	void changeNowSelectIP(QTreeWidgetItem * current);
 };
 
 #endif	// LINKTREEWIDGET_H_
