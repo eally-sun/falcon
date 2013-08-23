@@ -24,7 +24,6 @@ class MainListWidget;
 class ScreenViewWidget;
 class FluxViewWidget;
 class LinkProcessWidget;
-class LinkControlWidget;
 class LinkCmdWidget;
 class InfoWidget;
 
@@ -45,7 +44,6 @@ private:
 	ScreenViewWidget 	*screenViewWidget;			// 屏幕监控显示控件
 	FluxViewWidget 		*fluxViewWidget; 			// 流量监控显示控件
 	LinkProcessWidget 	*linkProcessWidget;			// 进程管理标签的显示控件
-	LinkControlWidget 	*linkControlWidget;			// 远程控制命令标签的显示控件
 	LinkCmdWidget 		*linkCmdWidget;				// 远程 cmd 标签的显示控件
 	InfoWidget 			*infoWidget;				// 信息查看选项卡	
 };

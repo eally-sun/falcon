@@ -36,6 +36,9 @@ public:
 	
 	void createMainWeiget();		// 创建主显示
 
+public slots:
+	void resetInfo();
+
 private:
 	ProcessTreeView *processTreeView; 	// 进程显示列表
 	QPushButton *getProcessButton;		// 获取进程列表按钮

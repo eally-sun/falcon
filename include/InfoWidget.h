@@ -19,8 +19,10 @@
 
 #include <QGroupBox>
 
-class QHBoxLayout;
+class QPushButton;
 class QVBoxLayout;
+class QHBoxLayout;
+class QTextBrowser;
 
 class InfoWidget : public QGroupBox
 {
@@ -30,9 +32,13 @@ public:
 	InfoWidget();
 	~InfoWidget();
 
+public slots:
 	void resetView();
 
 private:
+	QTextBrowser *infoView;
+	QPushButton *hardInfoButton;
+	QPushButton *logInfoButton;
 	QVBoxLayout *vBoxLayout;
 	QHBoxLayout *hBoxLayout;
 };

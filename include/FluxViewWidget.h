@@ -32,10 +32,9 @@ public:
 	FluxViewWidget();
 	~FluxViewWidget();
 
-	void resetFluxView();
-
 public slots:
 	void updateFluxData();
+	void resetFluxView();
 
 private:
 	QVBoxLayout *vBoxLayout;
