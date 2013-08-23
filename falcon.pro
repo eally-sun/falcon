@@ -12,6 +12,7 @@
 # =====================================================================================
 
 QT += xml
+QT += network
 
 TEMPLATE = app
 TARGET = 
@@ -26,14 +27,14 @@ HEADERS +=  include/MainWindow.h include/Debug.h include/LinkTreeWidget.h \
 			include/MainStackWidget.h include/ProcessTreeView.h include/FluxViewWidget.h \
 			include/LinkProcessWidget.h include/LinkCmdWidget.h include/InfoWidget.h \
 			include/MainListWidget.h include/ScreenViewWidget.h include/FluxWidget.h \
-			include/qcustomplot.h 
+			include/qcustomplot.h include/FalconXml.h include/ControlSocket.h
 
 # code file
 SOURCES +=  src/Main.cpp src/MainWindow.cpp src/LinkTreeWidget.cpp \
 			src/MainStackWidget.cpp src/ProcessTreeView.cpp src/FluxViewWidget.cpp \
 			src/LinkProcessWidget.cpp src/LinkCmdWidget.cpp src/InfoWidget.cpp \
 			src/MainListWidget.cpp src/ScreenViewWidget.cpp src/FluxWidget.cpp \
-			src/qcustomplot.cpp 
+			src/qcustomplot.cpp src/FalconXml.cpp src/ControlSocket.cpp
 
 # ui file
 FORMS += 

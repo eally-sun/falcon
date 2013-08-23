@@ -20,12 +20,14 @@
 #include <QTreeWidget>
 #include <QString>
 
+class MainWindow;
+
 class LinkTreeWidget : public QTreeWidget
 {
 	Q_OBJECT
 
 public:
-	LinkTreeWidget();
+	LinkTreeWidget(MainWindow *mainWindow);
 	~LinkTreeWidget();
 
 	bool addGroupItem(QString &strTitle);
@@ -35,6 +37,9 @@ public:
 
 public slots:
 	void changeNowSelectIP(QTreeWidgetItem * current);
+
+private:
+	MainWindow *mainWindow;
 };
 
 #endif	// LINKTREEWIDGET_H_

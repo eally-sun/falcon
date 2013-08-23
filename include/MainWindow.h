@@ -45,6 +45,8 @@ public:
 
 	void sleep(unsigned int msec);
 
+	MainStackWidget *getStackWidget();
+
 protected:
 	//void closeEvent(QCloseEvent *event);
 
