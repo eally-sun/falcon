@@ -18,6 +18,7 @@
 #define MAINWINDOW_H_
 
 #include <QMainWindow>
+#include <QSystemTrayIcon>
 
 #include "FalconType.h"
 
@@ -37,6 +38,7 @@ class QVBoxLayout;
 class LinkTreeWidget;
 class MainStackWidget;
 class ControlSocket;
+class QSystemTrayIcon;
 
 class MainWindow : public QMainWindow
 {
@@ -50,6 +52,7 @@ public:
 
 	MainStackWidget *getStackWidget();
 
+	void showTrayInfo(QString strInfo, unsigned int msec = 2000);
 	void setStatusLabel(QString strLabel);
 	void setClientList(QVector<GroupWithClient> &vectClient);
 	void setClientScreenInfo();
@@ -61,7 +64,7 @@ public:
 
 
 protected:
-	//void closeEvent(QCloseEvent *event);
+	void closeEvent(QCloseEvent *event);
 
 private slots:
 	void connectInfo();
@@ -71,6 +74,8 @@ private slots:
 	void cmd();
 	void info();
 	void about();
+	void closeWindow();
+	void showWindow(QSystemTrayIcon::ActivationReason type);
 
 private:
 	void createMainWeiget();		// 创建主窗口
@@ -78,7 +83,10 @@ private:
 	void createMenus();				// 创建主菜单
 	void createToolBars();			// 创建工具栏
 	void createStatusBar();			// 创建状态栏
+	void createSystemTrayIcon();	// 创建系统托盘图标
 	void tryConnServer();			// 尝试连接服务器
+
+	bool isTrayExit; 				// 是否点击了托盘区的退出
 
 	QLabel *statusLabel;			// 状态栏文字
 
@@ -102,6 +110,7 @@ private:
 	QMenu *fileMenu;				// 主菜单-文件子菜单指针
 	QMenu *setsMenu;				// 主菜单-设置子菜单指针
 	QMenu *helpMenu;				// 主菜单-帮助子菜单指针
+	QMenu *trayMenu; 				// 托盘区菜单 
 
 	QToolBar *mainToolBar;			// 功能相关工具栏指针
 
@@ -119,6 +128,8 @@ private:
 	QAction *minAction;				// 最小化窗口
 	QAction *exitAction;			// 退出程序
 	QAction *aboutAction;			// 关本于程序
+
+	QSystemTrayIcon *systemTrayIcon; // 系统托盘图标
 
 	ControlSocket *clientSocket;	// 与服务端通信套接字
 };
