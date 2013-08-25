@@ -27,7 +27,7 @@ public:
 	MainListWidget();
 	~MainListWidget();
 
-	void addComputerItem(QString &strTitle, bool isOnline);
+	void addComputerItem(QString strTitle, bool isOnline);
 };
 
 #endif	// MAINLISTWIDGET_H_

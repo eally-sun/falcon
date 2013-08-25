@@ -21,34 +21,33 @@
 #include <QFile>
 #include <QTextStream>
 
-#define _TIME_ qPrintable(QTime::currentTime ().toString ("hh:mm:ss:zzz"))
+#define _TIME_ qPrintable(QTime::currentTime().toString("hh:mm:ss:zzz"))
 
 void customMessageHandler(QtMsgType type, const char *msg)
 {
 	QString qstrText;
 
-	switch (type)
-		{
+	switch (type) {
 		case QtDebugMsg:
-			qstrText = QString("%1: %2").arg(_TIME_, msg);
+			qstrText = QString("%1 Debug Info: %2 ").arg(_TIME_, msg);
 			break;
 		case QtWarningMsg:
-			qstrText = QString("%1: %2").arg(_TIME_, msg);
+			qstrText = QString("%1 Warning Info: %2").arg(_TIME_, msg);
 			break;
 		case QtCriticalMsg:
-			qstrText = QString("%1: %2").arg(_TIME_, msg);
+			qstrText = QString("%1 Critical Info: %2").arg(_TIME_, msg);
 			break;
 		case QtFatalMsg:
-			qstrText = QString("%1: %2").arg(_TIME_, msg);
+			qstrText = QString("%1 Fatal Info: %2").arg(_TIME_, msg);
 			exit(0);
-		}
+	}
 
-		QFile outFile("debug.log");
+	QFile outFile("debug.log");
 
-		outFile.open(QIODevice::WriteOnly | QIODevice::Append);
-		QTextStream logStream(&outFile);
+	outFile.open(QIODevice::WriteOnly | QIODevice::Append);
+	QTextStream logStream(&outFile);
 
-		logStream << qstrText << endl;
+	logStream << qstrText;
 }
 
 #endif // DEBUG_H_

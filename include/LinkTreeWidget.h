@@ -30,8 +30,9 @@ public:
 	LinkTreeWidget(MainWindow *mainWindow);
 	~LinkTreeWidget();
 
-	bool addGroupItem(QString &strTitle);
-	bool addComputerItem(QString &strGroup, QString &strTitle, bool isOnline);
+	bool addGroupItem(QString strTitle);
+	bool addComputerItem(QString strGroup, QString strTitle, bool isOnline);
+	bool removeComputerItem(QString strComputer);
 
 	QString strNowSelectIP;
 

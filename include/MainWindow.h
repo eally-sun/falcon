@@ -19,6 +19,8 @@
 
 #include <QMainWindow>
 
+#include "FalconType.h"
+
 class QLabel;
 class QSplitter;
 class QMenu;
@@ -34,6 +36,7 @@ class QVBoxLayout;
 
 class LinkTreeWidget;
 class MainStackWidget;
+class ControlSocket;
 
 class MainWindow : public QMainWindow
 {
@@ -46,6 +49,16 @@ public:
 	void sleep(unsigned int msec);
 
 	MainStackWidget *getStackWidget();
+
+	void setStatusLabel(QString strLabel);
+	void setClientList(QVector<GroupWithClient> &vectClient);
+	void setClientScreenInfo();
+	void setClientFluxInfo();
+	void setClientProcessInfo();
+	void setClientHardInfo();
+	void setClientLogInfo();
+	void setClientCmd();
+
 
 protected:
 	//void closeEvent(QCloseEvent *event);
@@ -65,6 +78,7 @@ private:
 	void createMenus();				// 创建主菜单
 	void createToolBars();			// 创建工具栏
 	void createStatusBar();			// 创建状态栏
+	void tryConnServer();			// 尝试连接服务器
 
 	QLabel *statusLabel;			// 状态栏文字
 
@@ -107,6 +121,8 @@ private:
 	QAction *minAction;				// 最小化窗口
 	QAction *exitAction;			// 退出程序
 	QAction *aboutAction;			// 关本于程序
+
+	ControlSocket *clientSocket;	// 与服务端通信套接字
 };
 
 #endif // MAINWINDOW_H_

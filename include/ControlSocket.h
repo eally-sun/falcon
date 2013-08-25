@@ -19,13 +19,26 @@
 
 #include <QTcpSocket>
 
+#include "FalconType.h"
+
+class MainWindow;
+
 class ControlSocket : public QTcpSocket
 {
+	Q_OBJECT
+
 public:
-	ControlSocket();
+	ControlSocket(MainWindow *mainWindow);
 	~ControlSocket();
 
+public slots:
+	void sendRequest();
+	void getServerInfo();
+	void connFailed();
+	void connError();
+
 private:
+	MainWindow *mainWindow;
 };
 
 #endif	// CONTROLSOCKET_H_
