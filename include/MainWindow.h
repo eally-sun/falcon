@@ -84,11 +84,9 @@ private:
 
 	QLabel *currLinkLabel;			// 主界面当前连接标签
 	QLabel *currPortLabel;			// 主界面连接端口标签
-	QLabel *passwordLabel;			// 主界面密码标签
 
 	QLineEdit *currLinkIPEdit;		// 主界面当前连接输入框
 	QSpinBox  *currPortSpin;		// 主界面连接端口输入框
-	QLineEdit *passwordEdit;		// 主界面密码输入框
 
 	QPushButton *linkButton;		// 手动连接按钮
 
