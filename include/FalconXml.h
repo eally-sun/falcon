@@ -24,7 +24,7 @@ class FalconXml
 public:
 
 	// 构造控制指令XML包
-	static QByteArray CreaterControlCommandXml(XmlInfoType strType, QString strCmd = "");
+	static QByteArray CreaterControlCommandXml(XmlInfoType strType, QString strIP, QString strCmd = "");
 
 	// 返回一个收到的XML包的类型
 	static XmlInfoType getXmlInfoType(QByteArray &strXml);
@@ -33,22 +33,26 @@ public:
 	static void ResolvingClientListInfoXml(QByteArray &strXml, QVector<GroupWithClient> &vectClient);
 
 	// 解析客户端上报处理结果XML包
-	static void ResolvingClientDisposeInfoXml(QByteArray &strXml);
+	static void ResolvingClientDisposeInfoXml(QByteArray &strXml, QString &showInfo);
 
+	// TODO
 	// 解析桌面截图XML包
 	static void ResolvingDesktopScreenXml(QByteArray &strXml);
 
 	// 解析客户端网络流量信息XML包
-	static void ResolvingFluxInfoXml(QByteArray &strXml);
+	static void ResolvingFluxInfoXml(QByteArray &strXml, ClientFluxInfo &clientFluxInfo);
 
 	// 解析客户端进程信息XML包
-	static void ResolvingProcessInfoXml(QByteArray &strXml);
+	static void ResolvingProcessInfoXml(QByteArray &strXml, QVector<ClientProcessInfo> & vectProcessInfo);
+
+	// 解析客户端cmd处理信息XML包
+	static void ResolvingCmdInfoXml(QByteArray &strXml, QString &strCmd);
 
 	// 解析客户端硬件信息XML包
-	static void ResolvinghardInfoXml(QByteArray &strXml);
+	static void ResolvingHardInfoXml(QByteArray &strXml, QString &strHard);
 
 	// 解析客户端日志信息XML包
-	static void ResolvingLogInfoXml(QByteArray &strXml);
+	static void ResolvingLogInfoXml(QByteArray &strXml, QString &strLog);
 
 };
 

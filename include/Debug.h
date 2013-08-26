@@ -46,6 +46,7 @@ void customMessageHandler(QtMsgType type, const char *msg)
 
 	outFile.open(QIODevice::WriteOnly | QIODevice::Append);
 	QTextStream logStream(&outFile);
+	logStream.setCodec("UTF-8");
 
 	logStream << qstrText;
 }

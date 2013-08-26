@@ -23,21 +23,23 @@ class QPushButton;
 class QVBoxLayout;
 class QHBoxLayout;
 class FileTreeView;
-
 class ProcessTreeView;
+class MainWindow;
 
 class LinkProcessWidget : public QGroupBox
 {
 	Q_OBJECT
 
 public:
-	LinkProcessWidget();
+	LinkProcessWidget(MainWindow *mainWindow);
 	~LinkProcessWidget();
 	
 	void createMainWeiget();		// 创建主显示
+	ProcessTreeView *getProcessView();
 
 public slots:
 	void resetInfo();
+	void getProcessList();
 
 private:
 	ProcessTreeView *processTreeView; 	// 进程显示列表
@@ -46,6 +48,7 @@ private:
 
 	QVBoxLayout *processLayout;			// 进程列表窗口控制
 	QHBoxLayout *processButtonLayout;	// 进程列表底部窗口控制
+	MainWindow *mainWindow;
 };
 
 #endif	// LINKPROCESSWIDGET_H_

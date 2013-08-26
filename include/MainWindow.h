@@ -48,20 +48,24 @@ public:
 	MainWindow(QWidget *parent = 0);
 	~MainWindow();
 
+	QString strNowSelectIP; 	// µ±Ç°Ñ¡Ôñ IP
+
 	void sleep(unsigned int msec);
 
 	MainStackWidget *getStackWidget();
+	ControlSocket *getConnSocket();
+
+	void setUIEnable(bool isEnabled);
 
 	void showTrayInfo(QString strInfo, unsigned int msec = 2000);
 	void setStatusLabel(QString strLabel);
 	void setClientList(QVector<GroupWithClient> &vectClient);
 	void setClientScreenInfo();
-	void setClientFluxInfo();
-	void setClientProcessInfo();
-	void setClientHardInfo();
-	void setClientLogInfo();
-	void setClientCmd();
-
+	void setClientFluxInfo(ClientFluxInfo &clientFluxInfo);
+	void setClientProcessInfo(QVector<ClientProcessInfo> &vectProcessInfo);
+	void setClientCmdInfo(QString &strCmdInfo);
+	void setClientHardInfo(QString &strHardInfo);
+	void setClientLogInfo(QString &strLogInfo);
 
 protected:
 	void closeEvent(QCloseEvent *event);

@@ -26,13 +26,14 @@ class FluxViewWidget;
 class LinkProcessWidget;
 class LinkCmdWidget;
 class InfoWidget;
+class MainWindow;
 
 class MainStackWidget : public QWidget
 {
 	Q_OBJECT
 
 public:
-	MainStackWidget();
+	MainStackWidget(MainWindow *mainWindow);
 	~MainStackWidget();
 
 	void createMainWeiget();
@@ -46,6 +47,7 @@ private:
 	LinkProcessWidget 	*linkProcessWidget;			// 进程管理标签的显示控件
 	LinkCmdWidget 		*linkCmdWidget;				// 远程 cmd 标签的显示控件
 	InfoWidget 			*infoWidget;				// 信息查看选项卡	
+	MainWindow 			*mainWindow;
 };
 
 #endif	// MAINSTACKWIDGET_H_

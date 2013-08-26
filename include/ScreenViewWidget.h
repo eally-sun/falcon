@@ -24,13 +24,14 @@ class QPixmap;
 class QPushButton;
 class QHBoxLayout;
 class QVBoxLayout;
+class MainWindow;
 
 class ScreenViewWidget : public QGroupBox
 {
 	Q_OBJECT
 
 public:
-	ScreenViewWidget();
+	ScreenViewWidget(MainWindow *mainWindow);
 	~ScreenViewWidget();
 public slots:
 	void screenShotNative();
@@ -43,6 +44,7 @@ private:
 	QPushButton *saveButton;
 	QHBoxLayout *hBoxLayout;
 	QVBoxLayout *vBoxLayout;
+	MainWindow *mainWindow;
 };
 
 #endif	// SCREENVIEWWIDGET_H_

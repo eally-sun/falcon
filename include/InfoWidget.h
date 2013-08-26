@@ -23,24 +23,29 @@ class QPushButton;
 class QVBoxLayout;
 class QHBoxLayout;
 class QTextBrowser;
+class MainWindow;
 
 class InfoWidget : public QGroupBox
 {
 	Q_OBJECT
 
 public:
-	InfoWidget();
+	InfoWidget(MainWindow *mainWindow);
 	~InfoWidget();
+
+	QTextBrowser *infoView;
 
 public slots:
 	void resetView();
+	void getHardInfo();
+	void getLogInfo();
 
 private:
-	QTextBrowser *infoView;
 	QPushButton *hardInfoButton;
 	QPushButton *logInfoButton;
 	QVBoxLayout *vBoxLayout;
 	QHBoxLayout *hBoxLayout;
+	MainWindow *mainWindow;
 };
 
 #endif	// INFOWIDGET_H_

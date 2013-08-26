@@ -25,19 +25,22 @@ class QLineEdit;
 class QPushButton;
 class QVBoxLayout;
 class QHBoxLayout;
+class MainWindow;
 
 class LinkCmdWidget : public QGroupBox
 {
 	Q_OBJECT
 
 public:
-	LinkCmdWidget();
+	LinkCmdWidget(MainWindow *mainWindow);
 	~LinkCmdWidget();
 
 	void createMainWeiget();			// 创建主显示
 
 public slots:
-	void resetCmdInfo(); 		// 重置CMD显示界面
+	void resetCmdInfo();
+	void cmdViewAddInfo(QString strInfo);
+	void sendCMDCommand();
 
 private:
 	QTextBrowser *cmdText;				// cmd 输出显示窗口
@@ -47,6 +50,7 @@ private:
 
 	QVBoxLayout *cmdLayout;				// cmd 窗口控制
 	QHBoxLayout *cmdButtonLayout;		// cmd 底部窗口控制
+	MainWindow *mainWindow;
 };
 
 #endif	// LINKCMDWIDGET_H_

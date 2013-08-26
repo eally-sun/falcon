@@ -29,11 +29,13 @@ enum XmlInfoType {
 	// 客户端网络流量信息包
 	FluxInfo = 4,
 	// 进程信息包
-	ProcessInfo = 6,
+	ProcessInfo = 5,
 	// 硬件信息包
-	hardInfo = 7,
+	hardInfo = 6,
 	// 日志信息包
-	LogInfo = 8,
+	LogInfo = 7,
+	// CMD 信息包
+	CmdInfo = 8,
 
 	// 获取客户端列表信息包
 	GetClientListInfo = 20,
@@ -46,13 +48,32 @@ enum XmlInfoType {
 	// 获取硬件信息包
 	GethardInfo = 24,
 	// 获取日志信息包
-	GetLogInfo = 25
+	GetLogInfo = 25,
+	// 执行CMD指令包
+	RunCMDCommand = 26
+
 };
 
 struct GroupWithClient
 {
 	QString strGroup;
 	QVector<QString> vectClient;
+};
+
+struct ClientFluxInfo
+{
+	QString strClientIP;
+	double uploadSpeed;
+	double downloadSpeed;
+};
+
+struct ClientProcessInfo
+{
+	QString process;
+	QString pid;
+	QString mem;
+	QString path;
+	QString description;
 };
 
 #endif // FALCONTYPE_H_

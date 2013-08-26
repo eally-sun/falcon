@@ -33,7 +33,7 @@ public:
 	~FluxViewWidget();
 
 public slots:
-	void updateFluxData();
+	void updateFluxData(double, double);
 	void resetFluxView();
 
 private:

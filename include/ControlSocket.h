@@ -32,6 +32,7 @@ public:
 	~ControlSocket();
 
 public slots:
+	void sendControlCommand(XmlInfoType type, QString strCmd = "");
 	void sendRequest();
 	void getServerInfo();
 	void connFailed();
