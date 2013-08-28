@@ -36,6 +36,8 @@ enum XmlInfoType {
 	LogInfo = 7,
 	// CMD 信息包
 	CmdInfo = 8,
+	// 黑名单信息包
+	BlackList = 9,
 
 	// 获取客户端列表信息包
 	GetClientListInfo = 20,
@@ -50,8 +52,12 @@ enum XmlInfoType {
 	// 获取日志信息包
 	GetLogInfo = 25,
 	// 执行CMD指令包
-	RunCMDCommand = 26
+	RunCMDCommand = 26,
 
+	// 客户端UDP获取服务端包
+	FoundServerInfo = 30,
+	// 服务端回应客户端信息包
+	ServerResponse = 31
 };
 
 struct GroupWithClient
