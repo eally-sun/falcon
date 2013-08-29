@@ -67,6 +67,9 @@ public:
 	void setClientHardInfo(QString &strHardInfo);
 	void setClientLogInfo(QString &strLogInfo);
 
+	void readSettings();			// 读取配置文件
+	void writeSettings();			// 写入配置文件
+
 protected:
 	void closeEvent(QCloseEvent *event);
 
@@ -79,6 +82,7 @@ private slots:
 	void info();
 	void about();
 	void closeWindow();
+	void connectServerBtn();
 	void showWindow(QSystemTrayIcon::ActivationReason type);
 
 private:
@@ -136,6 +140,8 @@ private:
 	QSystemTrayIcon *systemTrayIcon; // 系统托盘图标
 
 	ControlSocket *clientSocket;	// 与服务端通信套接字
+
+	SettingInfo settingInfo; 		// 软件设置
 };
 
 #endif // MAINWINDOW_H_

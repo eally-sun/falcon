@@ -82,4 +82,12 @@ struct ClientProcessInfo
 	QString description;
 };
 
+struct SettingInfo
+{
+	QString strServerIP;
+	int serverPort;
+	bool isShowTrayInfo;
+	bool isSendPhoneMessage;
+};
+
 #endif // FALCONTYPE_H_
