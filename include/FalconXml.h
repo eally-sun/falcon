@@ -29,6 +29,9 @@ public:
 	// 返回一个收到的XML包的类型
 	static XmlInfoType getXmlInfoType(QByteArray &strXml);
 
+	// 检查一个XML包是否接收完整
+	static bool checkXmlData(QByteArray &strData);
+
 	// 解析客户端列表XML包
 	static void ResolvingClientListInfoXml(QByteArray &strXml, QVector<GroupWithClient> &vectClient);
 

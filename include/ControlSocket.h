@@ -31,6 +31,9 @@ public:
 	ControlSocket(MainWindow *mainWindow);
 	~ControlSocket();
 
+	QString getIP();
+	void readFullXml(QByteArray &recvData);
+
 public slots:
 	void sendControlCommand(XmlInfoType type, QString strCmd = "");
 	void sendRequest();

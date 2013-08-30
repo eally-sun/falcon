@@ -39,6 +39,7 @@ class LinkTreeWidget;
 class MainStackWidget;
 class ControlSocket;
 class QSystemTrayIcon;
+class QHttp;
 
 class MainWindow : public QMainWindow
 {
@@ -55,8 +56,8 @@ public:
 	MainStackWidget *getStackWidget();
 	ControlSocket *getConnSocket();
 
+	void sendPhoneMessage(QString strMsg);
 	void setUIEnable(bool isEnabled);
-
 	void showTrayInfo(QString strInfo, unsigned int msec = 2000);
 	void setStatusLabel(QString strLabel);
 	void setClientList(QVector<GroupWithClient> &vectClient);
@@ -140,6 +141,7 @@ private:
 	QSystemTrayIcon *systemTrayIcon; // 系统托盘图标
 
 	ControlSocket *clientSocket;	// 与服务端通信套接字
+	QHttp 		  *httpSocket;
 
 	SettingInfo settingInfo; 		// 软件设置
 };
