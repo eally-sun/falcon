@@ -18,6 +18,7 @@
 #define FLUXVIEWWIDGET_H_
 
 #include <QGroupBox>
+#include <QString>
 
 class QHBoxLayout;
 class QVBoxLayout;
@@ -33,7 +34,16 @@ public:
 	~FluxViewWidget();
 
 public slots:
-	void updateFluxData(double, double);
+
+	// 功能描述： 更新一次标签流量显示数据
+	void updateLabelFluxData(double upSpeed, double downSpeed);
+
+	// 指定IP的数据添加函数
+	void addOnceSpeedByIP(QString strIP, double upSpeed, double downSpeed);
+
+	// 修改显示为指定IP的流量数据
+	void showFluxInfoByIP(QString strIP);
+
 	void resetFluxView();
 
 private:
@@ -42,6 +52,7 @@ private:
 	QLabel *upLabel;
 	QLabel *downLabel;
 	FluxWidget *fluxView;
+	QString nowSelectIP;
 };
 
 #endif	// FLUXVIEWWIDGET_H_

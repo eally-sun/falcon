@@ -19,6 +19,7 @@
 
 #include <QVector>
 #include "qcustomplot.h"
+#include "FalconType.h"
 
 class FluxWidget : public QCustomPlot
 {
@@ -31,21 +32,15 @@ public:
 	// 清空流量显示数据
 	void fluxDataClear();
 
-	// 增加一个上传速率数据
-	void addUpSpeedData(double upSpeed);
+	// 指定IP的数据添加函数
+	void addOnceSpeedByIP(QString srtIP, double upSpeed, double downSpeed);
 
-	// 增加一个下载速率数据
-	void addDownSpeedData(double downSpeed);
+	// 修改显示为指定IP的流量数据
+	void showFluxInfoByIP(QString strIP);
 
 private:
-	// 上传速率数据容器
-	QVector<double> upLineXVector;
-	QVector<double> upLineYVector;
-
-	// 下载速率数据容器
-	QVector<double> downLineXVector;
-	QVector<double> downLineYVector;
-
+	QVector<ClientFluxInfoSave> vectAllClientFluxInfo;
+	QString strNowSelectIP;
 	int fluxPonitCount;
 };
 

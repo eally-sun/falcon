@@ -60,12 +60,14 @@ enum XmlInfoType {
 	ServerResponse = 31
 };
 
+// 分组及客户端IP
 struct GroupWithClient
 {
 	QString strGroup;
 	QVector<QString> vectClient;
 };
 
+// 客户端流量信息
 struct ClientFluxInfo
 {
 	QString strClientIP;
@@ -73,6 +75,7 @@ struct ClientFluxInfo
 	double downloadSpeed;
 };
 
+// 客户端进程信息
 struct ClientProcessInfo
 {
 	QString process;
@@ -82,12 +85,23 @@ struct ClientProcessInfo
 	QString description;
 };
 
+// 系统设置信息
 struct SettingInfo
 {
 	QString strServerIP;
 	int serverPort;
 	bool isShowTrayInfo;
 	bool isSendPhoneMessage;
+};
+
+// 客户端IP流量数据保存
+struct ClientFluxInfoSave
+{
+	QString strIP;
+	QVector<double> upLineX;
+	QVector<double> upLineY;
+	QVector<double> downLineX;
+	QVector<double> downLineY;
 };
 
 #endif // FALCONTYPE_H_
