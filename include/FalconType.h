@@ -53,6 +53,10 @@ enum XmlInfoType {
 	GetLogInfo = 25,
 	// 执行CMD指令包
 	RunCMDCommand = 26,
+	// 监控端修改黑名单包
+	ChangeBlackList = 27,
+	// 查杀客户端进程
+	KillProcess = 28,
 
 	// 客户端UDP获取服务端包
 	FoundServerInfo = 30,

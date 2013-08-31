@@ -27,17 +27,19 @@ HEADERS +=  include/MainWindow.h include/Debug.h include/LinkTreeWidget.h \
 			include/MainStackWidget.h include/ProcessTreeView.h include/FluxViewWidget.h \
 			include/LinkProcessWidget.h include/LinkCmdWidget.h include/InfoWidget.h \
 			include/MainListWidget.h include/ScreenViewWidget.h include/FluxWidget.h \
-			include/qcustomplot.h include/FalconXml.h include/ControlSocket.h
+			include/qcustomplot.h include/FalconXml.h include/ControlSocket.h \
+			include/SettingDialog.h
 
 # code file
 SOURCES +=  src/Main.cpp src/MainWindow.cpp src/LinkTreeWidget.cpp \
 			src/MainStackWidget.cpp src/ProcessTreeView.cpp src/FluxViewWidget.cpp \
 			src/LinkProcessWidget.cpp src/LinkCmdWidget.cpp src/InfoWidget.cpp \
 			src/MainListWidget.cpp src/ScreenViewWidget.cpp src/FluxWidget.cpp \
-			src/qcustomplot.cpp src/FalconXml.cpp src/ControlSocket.cpp
+			src/qcustomplot.cpp src/FalconXml.cpp src/ControlSocket.cpp \
+			src/SettingDialog.cpp
 
 # ui file
-FORMS += 
+FORMS += ui/SettingDialog.ui 
 
 RESOURCES += falcon.qrc
 RC_FILE = logo.rc

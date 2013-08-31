@@ -20,6 +20,7 @@
 #include <QTreeView>
 #include <QString>
 
+class MainWindow;
 class QStandardItemModel;
 class QModelIndex;
 
@@ -28,7 +29,7 @@ class ProcessTreeView : public QTreeView
 	Q_OBJECT
 
 public:
-	ProcessTreeView();
+	ProcessTreeView(MainWindow *mainWindow);
 	~ProcessTreeView();
 
 	void rebuildInfo();
@@ -43,9 +44,11 @@ public slots:
 		void removeNowSelectProcess();
 
 private:
+	MainWindow *mainWindow;
 	QStandardItemModel *mainModel;
 	QModelIndex nowSelectIndex;
 	QString strNowProcess;
+	QString strNowPid;
 	int iPosition;
 };
 

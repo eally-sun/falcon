@@ -39,6 +39,7 @@ class LinkTreeWidget;
 class MainStackWidget;
 class ControlSocket;
 class QSystemTrayIcon;
+
 class QHttp;
 
 class MainWindow : public QMainWindow
@@ -83,6 +84,7 @@ private slots:
 	void info();
 	void about();
 	void closeWindow();
+	void softSetting();
 	void connectServerBtn();
 	void showWindow(QSystemTrayIcon::ActivationReason type);
 
@@ -124,7 +126,6 @@ private:
 	QToolBar *mainToolBar;			// 功能相关工具栏指针
 
 	QAction *auto_connAction;		// 自动上线
-	QAction *configAction;			// 服务端配置
 
 	QAction *connectAction; 		// 连接总览
 	QAction *screenShotAction;		// 屏幕捕获
