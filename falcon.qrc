@@ -19,10 +19,6 @@
     <file>res/images/computer_online.png</file>
     <file>res/images/computer_offline.png</file>
     <file>res/ico/main.ico</file>
-    <file>res/sound/upfile.wav</file>
-    <file>res/sound/downfile.wav</file>
-    <file>res/sound/login.wav</file>
-    <file>res/sound/offline.wav</file>
     <file>res/language/qt_zh_CN.qm</file>
 </qresource>
 </RCC>

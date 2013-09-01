@@ -94,8 +94,12 @@ struct SettingInfo
 {
 	QString strServerIP;
 	int serverPort;
+	bool isReConn;
 	bool isShowTrayInfo;
+	bool isPlaySound;
 	bool isSendPhoneMessage;
+	QString strFetionNumber;
+	QString strFetionPass;	
 };
 
 // 客户端IP流量数据保存

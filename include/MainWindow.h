@@ -143,7 +143,8 @@ private:
 
 	ControlSocket *clientSocket;	// 与服务端通信套接字
 	QHttp 		  *httpSocket;
-
+	
+public:
 	SettingInfo settingInfo; 		// 软件设置
 };
 

@@ -19,6 +19,7 @@
 
 #include <QDialog>
 #include "ui_SettingDialog.h"
+#include "FalconType.h"
 
 class SettingDialog : public QDialog, Ui::SettingDialog
 {
@@ -27,6 +28,12 @@ class SettingDialog : public QDialog, Ui::SettingDialog
 public:
 	SettingDialog();
 	~SettingDialog();
+
+	// 设置对话框选项信息
+	void setDialogSetting(SettingInfo &setInfo);
+
+	// 获取对话框选项信息
+	void getDialogSetting(SettingInfo &setInfo);
 };
 
 #endif	// SETTINGDIALOG_H_
