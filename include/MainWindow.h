@@ -19,6 +19,8 @@
 
 #include <QMainWindow>
 #include <QSystemTrayIcon>
+#include <QUdpSocket>
+#include <QTimer>
 
 #include "FalconType.h"
 
@@ -89,6 +91,12 @@ private slots:
 	void connectServerBtn();
 	void showWindow(QSystemTrayIcon::ActivationReason type);
 
+public slots:
+	void startUdpFoundServer();
+	void stopUdpFoundServer();
+	void recvUdpMessage();
+	void sendUdpFoundInfo();
+
 private:
 	void createMainWeiget();		// 创建主窗口
 	void createActions();			// 创建动作
@@ -144,6 +152,9 @@ private:
 
 	ControlSocket *clientSocket;	// 与服务端通信套接字
 	QHttp 		  *httpSocket;
+	QUdpSocket	 foundServerSocket;  // 寻找客户端套接字
+	QUdpSocket	 waitServerSocket;	 // 等待服务器响应套接字
+	QTimer		 foundServerTimer; 	 // 定时发包寻找服务端
 	
 public:
 	SettingInfo settingInfo; 		// 软件设置

@@ -26,6 +26,9 @@ public:
 	// 构造控制指令XML包
 	static QByteArray CreaterControlCommandXml(XmlInfoType strType, QString strIP, QString strCmd = "");
 
+	// 构造寻找服务端的UDP发送XML包
+	static QByteArray CreateUdpFoundServerXml();
+
 	// 返回一个收到的XML包的类型
 	static XmlInfoType getXmlInfoType(QByteArray &strXml);
 
