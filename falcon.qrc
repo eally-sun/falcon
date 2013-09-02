@@ -20,5 +20,6 @@
     <file>res/images/computer_offline.png</file>
     <file>res/ico/main.ico</file>
     <file>res/language/qt_zh_CN.qm</file>
+    <file>res/language/english.qm</file>
 </qresource>
 </RCC>

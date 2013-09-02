@@ -43,3 +43,6 @@ FORMS += ui/SettingDialog.ui
 
 RESOURCES += falcon.qrc
 RC_FILE = logo.rc
+
+# language
+TRANSLATIONS = tr/language.ts

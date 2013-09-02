@@ -42,7 +42,6 @@ class MainStackWidget;
 class ControlSocket;
 class QSystemTrayIcon;
 class SettingDialog;
-
 class QHttp;
 
 class MainWindow : public QMainWindow
@@ -158,7 +157,7 @@ private:
 	QUdpSocket	 waitServerSocket;	 // 等待服务器响应套接字
 	QTimer		 foundServerTimer; 	 // 定时发包寻找服务端
 	SettingDialog *settingDialog; 	 // 设置对话框
-	
+
 public:
 	SettingInfo 		settingInfo; 		// 软件设置
 	QVector<QString> 	vectBlackList;		// 黑名单设置

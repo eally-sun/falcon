@@ -103,7 +103,8 @@ struct SettingInfo
 	bool isPlaySound;
 	bool isSendPhoneMessage;
 	QString strFetionNumber;
-	QString strFetionPass;	
+	QString strFetionPass;
+	QString strLanguage;
 };
 
 // 客户端IP流量数据保存
