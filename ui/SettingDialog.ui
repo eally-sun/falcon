@@ -94,7 +94,7 @@
    <property name="title">
     <string>进程黑名单设置</string>
    </property>
-   <widget class="QListView" name="listView">
+   <widget class="QListWidget" name="listWidget">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -364,7 +364,7 @@
   <tabstop>checkBoxSendMsg</tabstop>
   <tabstop>editFetionNumber</tabstop>
   <tabstop>editFetionPass</tabstop>
-  <tabstop>listView</tabstop>
+  <tabstop>listWidget</tabstop>
   <tabstop>lineEdit</tabstop>
   <tabstop>btnAddBlacklist</tabstop>
   <tabstop>btnDelBlackList</tabstop>

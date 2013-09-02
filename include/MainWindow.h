@@ -41,6 +41,7 @@ class LinkTreeWidget;
 class MainStackWidget;
 class ControlSocket;
 class QSystemTrayIcon;
+class SettingDialog;
 
 class QHttp;
 
@@ -96,6 +97,7 @@ public slots:
 	void stopUdpFoundServer();
 	void recvUdpMessage();
 	void sendUdpFoundInfo();
+	void setBlackList();
 
 private:
 	void createMainWeiget();		// 创建主窗口
@@ -155,9 +157,11 @@ private:
 	QUdpSocket	 foundServerSocket;  // 寻找客户端套接字
 	QUdpSocket	 waitServerSocket;	 // 等待服务器响应套接字
 	QTimer		 foundServerTimer; 	 // 定时发包寻找服务端
+	SettingDialog *settingDialog; 	 // 设置对话框
 	
 public:
-	SettingInfo settingInfo; 		// 软件设置
+	SettingInfo 		settingInfo; 		// 软件设置
+	QVector<QString> 	vectBlackList;		// 黑名单设置
 };
 
 #endif // MAINWINDOW_H_

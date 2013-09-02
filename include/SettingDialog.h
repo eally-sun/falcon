@@ -18,6 +18,9 @@
 #define SETTINGDIALOG_H_
 
 #include <QDialog>
+#include <QVector>
+#include <QString>
+
 #include "ui_SettingDialog.h"
 #include "FalconType.h"
 
@@ -34,6 +37,25 @@ public:
 
 	// 获取对话框选项信息
 	void getDialogSetting(SettingInfo &setInfo);
+
+	// 设置黑名单列表
+	void setBlackList(QVector<QString> &vectBlackList);
+
+	// 获取黑名单列表
+	void getBlackList(QVector<QString> &vectBlackList);
+
+protected:
+	bool eventFilter(QObject *target, QEvent *event);
+
+public slots:
+	void addProcessToList();
+
+	void resetListView();
+
+	void deleteProcess();
+
+private:
+	QVector<QString> oldBlackList;
 };
 
 #endif	// SETTINGDIALOG_H_

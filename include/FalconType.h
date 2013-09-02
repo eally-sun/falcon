@@ -59,6 +59,8 @@ enum XmlInfoType {
 	ChangeBlackList = 27,
 	// 查杀客户端进程
 	KillProcess = 28,
+	// 监控端获取黑名单信息包
+	GetBlackList = 29,
 
 	// 客户端UDP获取服务端包
 	FoundServerInfo = 30,

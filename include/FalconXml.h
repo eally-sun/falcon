@@ -60,6 +60,11 @@ public:
 	// 解析客户端日志信息XML包
 	static void ResolvingLogInfoXml(QByteArray &strXml, QString &strLog);
 
+	// 解析服务端黑名单XML包
+	static void ResolvingBlackListInfoXml(QByteArray &strXml, QVector<QString> &vectBlackList);
+	
+	// 构造服务端黑名单包
+	static QByteArray CreateBlackListInfoXml(QVector<QString> &vectBlackList);
 };
 
 #endif	// FALCONXML_H_
