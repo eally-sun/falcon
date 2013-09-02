@@ -18,7 +18,7 @@
 #define CONTROLSOCKET_H_
 
 #include <QTcpSocket>
-
+#include <QVector>
 #include "FalconType.h"
 
 class MainWindow;
@@ -33,6 +33,8 @@ public:
 
 	QString getIP();
 	void readFullXml(QByteArray &recvData);
+	void addClientLog(QString strIP, QString strLogInfo);
+	void getLogInfo(QString strIP, QString &strLogInfo);
 
 public slots:
 	void sendControlCommand(XmlInfoType type, QString strCmd = "");
@@ -43,6 +45,7 @@ public slots:
 
 private:
 	MainWindow *mainWindow;
+	QVector<ClientLogInfo> vectClientInfo;
 };
 
 #endif	// CONTROLSOCKET_H_

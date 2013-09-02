@@ -114,4 +114,11 @@ struct ClientFluxInfoSave
 	QVector<double> downLineY;
 };
 
+// 客户端日志数据
+struct ClientLogInfo
+{
+	QString strIP;
+	QVector<QString> vectLogInfo;
+};
+
 #endif // FALCONTYPE_H_

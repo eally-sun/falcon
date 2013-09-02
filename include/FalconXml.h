@@ -36,7 +36,7 @@ public:
 	static void ResolvingClientListInfoXml(QByteArray &strXml, QVector<GroupWithClient> &vectClient);
 
 	// 解析客户端上报处理结果XML包
-	static void ResolvingClientDisposeInfoXml(QByteArray &strXml, QString &showInfo);
+	static void ResolvingClientDisposeInfoXml(QByteArray &strXml, QString &showInfo, QString &strIP);
 
 	// TODO
 	// 解析桌面截图XML包
