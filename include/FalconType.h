@@ -38,6 +38,8 @@ enum XmlInfoType {
 	CmdInfo = 8,
 	// 黑名单信息包
 	BlackList = 9,
+	// 新的客户端连接信息包
+	NewClientConn = 10,
 
 	// 获取客户端列表信息包
 	GetClientListInfo = 20,

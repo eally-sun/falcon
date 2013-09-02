@@ -18,6 +18,7 @@
 #define LINKCMDWIDGET_H_
 
 #include <QGroupBox>
+#include <QStack>
 
 class QTextBrowser;
 class QLabel;
@@ -37,6 +38,9 @@ public:
 
 	void createMainWeiget();			// 创建主显示
 
+protected:
+	bool eventFilter(QObject *target, QEvent *event);
+
 public slots:
 	void resetCmdInfo();
 	void cmdViewAddInfo(QString strInfo);
@@ -51,6 +55,8 @@ private:
 	QVBoxLayout *cmdLayout;				// cmd 窗口控制
 	QHBoxLayout *cmdButtonLayout;		// cmd 底部窗口控制
 	MainWindow *mainWindow;
+	QStack<QString> cmdUpStack;
+	QStack<QString> cmdDownStack;
 };
 
 #endif	// LINKCMDWIDGET_H_

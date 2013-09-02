@@ -360,13 +360,16 @@
   <tabstop>spinServerPort</tabstop>
   <tabstop>checkBoxReConn</tabstop>
   <tabstop>checkBoxTray</tabstop>
+  <tabstop>checkBoxSound</tabstop>
   <tabstop>checkBoxSendMsg</tabstop>
   <tabstop>editFetionNumber</tabstop>
   <tabstop>editFetionPass</tabstop>
   <tabstop>listView</tabstop>
+  <tabstop>lineEdit</tabstop>
   <tabstop>btnAddBlacklist</tabstop>
   <tabstop>btnDelBlackList</tabstop>
   <tabstop>btnRecovery</tabstop>
+  <tabstop>buttonBox_2</tabstop>
  </tabstops>
  <resources/>
  <connections>

@@ -57,6 +57,7 @@ public:
 	MainStackWidget *getStackWidget();
 	ControlSocket *getConnSocket();
 
+	QString EncryptOrDecipher(QString strPass);
 	void sendPhoneMessage(QString strMsg);
 	void setUIEnable(bool isEnabled);
 	void showTrayInfo(QString strInfo, unsigned int msec = 2000);
