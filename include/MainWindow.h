@@ -71,6 +71,7 @@ public:
 	void setClientCmdInfo(QString &strCmdInfo);
 	void setClientHardInfo(QString &strHardInfo);
 	void setClientLogInfo(QString &strLogInfo);
+	void tryConnServer();
 
 	void readSettings();			// 读取配置文件
 	void writeSettings();			// 写入配置文件
@@ -105,7 +106,6 @@ private:
 	void createToolBars();			// 创建工具栏
 	void createStatusBar();			// 创建状态栏
 	void createSystemTrayIcon();	// 创建系统托盘图标
-	void tryConnServer();			// 尝试连接服务器
 
 	bool isTrayExit; 				// 是否点击了托盘区的退出
 

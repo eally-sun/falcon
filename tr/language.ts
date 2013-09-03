@@ -40,12 +40,12 @@
         <translation type="unfinished">Please choose the IP which you want to control!</translation>
     </message>
     <message>
-        <location filename="../src/ControlSocket.cpp" line="185"/>
+        <location filename="../src/ControlSocket.cpp" line="192"/>
         <source>连接服务器错误：</source>
         <translation type="unfinished">Connect Server Error:</translation>
     </message>
     <message>
-        <location filename="../src/ControlSocket.cpp" line="186"/>
+        <location filename="../src/ControlSocket.cpp" line="193"/>
         <source>  连接服务器错误：</source>
         <translation type="unfinished">Connect Server Error:</translation>
     </message>
@@ -142,7 +142,7 @@ $&gt;</translation>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../src/MainWindow.cpp" line="51"/>
+        <location filename="../src/MainWindow.cpp" line="50"/>
         <source>Falcan 企业网络监控系统 -- Alpha 1</source>
         <translation type="unfinished">Falcon Network Monitoring System -- Alpha 1</translation>
     </message>
@@ -204,130 +204,129 @@ $&gt;</translation>
     </message>
     <message>
         <location filename="../src/MainWindow.cpp" line="346"/>
-        <source>自动服务客户端</source>
-        <translation type="unfinished">Auto Connect Server</translation>
+        <source>自动搜索服务器</source>
+        <translation type="unfinished">Auto Searh Server</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="348"/>
-        <location filename="../src/MainWindow.cpp" line="350"/>
+        <location filename="../src/MainWindow.cpp" line="349"/>
+        <location filename="../src/MainWindow.cpp" line="351"/>
         <source>程序设置</source>
         <translation type="unfinished">Setting</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="353"/>
-        <location filename="../src/MainWindow.cpp" line="355"/>
+        <location filename="../src/MainWindow.cpp" line="354"/>
+        <location filename="../src/MainWindow.cpp" line="356"/>
         <source>退出程序</source>
         <translation type="unfinished">Exit</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="358"/>
-        <location filename="../src/MainWindow.cpp" line="360"/>
+        <location filename="../src/MainWindow.cpp" line="359"/>
+        <location filename="../src/MainWindow.cpp" line="361"/>
         <source>关于本程序</source>
         <translation type="unfinished">About us</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="363"/>
+        <location filename="../src/MainWindow.cpp" line="364"/>
         <source>连接总览</source>
         <translation type="unfinished">Connect View</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="365"/>
+        <location filename="../src/MainWindow.cpp" line="366"/>
         <source>客户端连接总览</source>
         <translation type="unfinished">Client OverView</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="368"/>
+        <location filename="../src/MainWindow.cpp" line="369"/>
         <source>屏幕捕获</source>
         <translation type="unfinished">Screen Shot</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="370"/>
+        <location filename="../src/MainWindow.cpp" line="371"/>
         <source>捕获被控端的屏幕</source>
         <translation type="unfinished">Shot the screen</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="373"/>
+        <location filename="../src/MainWindow.cpp" line="374"/>
         <source>流量监控</source>
         <translation type="unfinished">Flux View</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="375"/>
+        <location filename="../src/MainWindow.cpp" line="376"/>
         <source>客户端流量监控</source>
         <translation type="unfinished">Client Flux View</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="378"/>
+        <location filename="../src/MainWindow.cpp" line="379"/>
         <source>进程管理</source>
         <translation type="unfinished">Process Manage</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="380"/>
+        <location filename="../src/MainWindow.cpp" line="381"/>
         <source>客户端进程管理</source>
         <translation type="unfinished">Client Process Manage</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="383"/>
+        <location filename="../src/MainWindow.cpp" line="384"/>
         <source>远程CMD</source>
         <translation type="unfinished">Remote CMD</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="385"/>
+        <location filename="../src/MainWindow.cpp" line="386"/>
         <source>远程执行CMD命令</source>
         <translation type="unfinished">Remote CMD</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="388"/>
+        <location filename="../src/MainWindow.cpp" line="389"/>
         <source>信息查看</source>
         <translation type="unfinished">Info View</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="390"/>
+        <location filename="../src/MainWindow.cpp" line="391"/>
         <source>查看客户端信息和处理日志</source>
         <translation type="unfinished">View the client &apos;s info</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="407"/>
+        <location filename="../src/MainWindow.cpp" line="408"/>
         <source>文件</source>
         <translation type="unfinished">File</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="412"/>
+        <location filename="../src/MainWindow.cpp" line="413"/>
         <source>设置</source>
         <translation type="unfinished">Setting</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="415"/>
+        <location filename="../src/MainWindow.cpp" line="416"/>
         <source>帮助</source>
         <translation type="unfinished">Help</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="432"/>
+        <location filename="../src/MainWindow.cpp" line="433"/>
         <source>工具栏</source>
         <translation type="unfinished">Tools</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="499"/>
-        <location filename="../src/MainWindow.cpp" line="678"/>
+        <location filename="../src/MainWindow.cpp" line="500"/>
+        <location filename="../src/MainWindow.cpp" line="696"/>
         <source>Falcon 企业网络监控系统</source>
         <translation type="unfinished">Falcon Network Monitoring System</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="610"/>
         <source>尝试连接服务器 </source>
-        <translation type="unfinished">Try to connect </translation>
+        <translation type="obsolete">Try to connect </translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="656"/>
+        <location filename="../src/MainWindow.cpp" line="670"/>
         <source>尝试手动连接服务器 </source>
         <translation type="unfinished">Try to connect</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="781"/>
+        <location filename="../src/MainWindow.cpp" line="897"/>
         <source>自动开始在局域网里寻找服务器...</source>
         <translation type="unfinished">Auto search server...</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="805"/>
+        <location filename="../src/MainWindow.cpp" line="942"/>
         <source>自动连接服务器 </source>
         <translation type="unfinished">Auto Connect</translation>
     </message>

@@ -1,6 +1,7 @@
 <RCC>
 <qresource>
     <file>res/images/logo.png</file>
+    <file>res/images/logo_en.png</file>
     <file>res/images/auto_conn.png</file>
     <file>res/images/screenshot.png</file>
     <file>res/images/config.png</file>
