@@ -18,9 +18,11 @@
 #define LINKTREEWIDGET_H_
 
 #include <QTreeWidget>
+#include <QVector>
 #include <QString>
 
 class MainWindow;
+class QAction;
 
 class LinkTreeWidget : public QTreeWidget
 {
@@ -31,16 +33,22 @@ public:
 	~LinkTreeWidget();
 
 	bool addGroupItem(QString strTitle);
+	bool delGroupItem(QString strTitle);
 	bool addComputerItem(QString strGroup, QString strTitle, bool isOnline);
 	bool removeComputerItem(QString strComputer);
 
 	QString strNowSelectIP;
 
 public slots:
-	void changeNowSelectIP(QTreeWidgetItem * current);
+	void changeNowSelectIP(QTreeWidgetItem *current);
+	void showContextMenu(const QPoint &);
+	void addGroupAction();
+	void delGroupAction();
+	void moveGroupAction(QAction *);
 
 private:
 	MainWindow *mainWindow;
+	QVector<QString> vectGroupName;
 };
 
 #endif	// LINKTREEWIDGET_H_
