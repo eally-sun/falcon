@@ -21,12 +21,14 @@
 #include "qcustomplot.h"
 #include "FalconType.h"
 
+class MainWindow;
+
 class FluxWidget : public QCustomPlot
 {
 	Q_OBJECT
 
 public:
-	FluxWidget();
+	FluxWidget(MainWindow *mainWindow);
 	~FluxWidget();
 
 	// 清空流量显示数据
@@ -42,6 +44,7 @@ private:
 	QVector<ClientFluxInfoSave> vectAllClientFluxInfo;
 	QString strNowSelectIP;
 	int fluxPonitCount;
+	MainWindow *mainWindow;
 };
 
 #endif	// FLUXVIEWWIDGET_H_

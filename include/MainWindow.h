@@ -65,6 +65,7 @@ public:
 	void showTrayInfo(QString strInfo, unsigned int msec = 2000);
 	void setStatusLabel(QString strLabel);
 	void setClientList(QVector<GroupWithClient> &vectClient);
+	void setClientOffList(QVector<GroupWithClient> &vectClient);
 	void setClientScreenInfo();
 	void setClientFluxInfo(ClientFluxInfo &clientFluxInfo);
 	void setClientProcessInfo(QVector<ClientProcessInfo> &vectProcessInfo);

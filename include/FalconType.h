@@ -40,6 +40,8 @@ enum XmlInfoType {
 	BlackList = 9,
 	// 新的客户端连接信息包
 	NewClientConn = 10,
+	// 客户端离线信息
+	ClientOffLine = 11,
 
 	// 获取客户端列表信息包
 	GetClientListInfo = 20,
@@ -105,6 +107,9 @@ struct SettingInfo
 	QString strFetionNumber;
 	QString strFetionPass;
 	QString strLanguage;
+	int 	upSpeedLimit;
+	int 	downSpeedLimit;
+	int 	allowTimes;
 };
 
 // 客户端IP流量数据保存
@@ -115,6 +120,8 @@ struct ClientFluxInfoSave
 	QVector<double> upLineY;
 	QVector<double> downLineX;
 	QVector<double> downLineY;
+	int upOverMaxTimes;
+	int downOverMaxTimes;
 };
 
 // 客户端日志数据

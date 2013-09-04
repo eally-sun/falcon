@@ -22,15 +22,16 @@
 
 class QHBoxLayout;
 class QVBoxLayout;
-class QLabel;
 class FluxWidget;
+class MainWindow;
+class QLabel;
 
 class FluxViewWidget : public QGroupBox
 {
 	Q_OBJECT
 
 public:
-	FluxViewWidget();
+	FluxViewWidget(MainWindow *mainWindow);
 	~FluxViewWidget();
 
 public slots:
@@ -53,6 +54,7 @@ private:
 	QLabel *downLabel;
 	FluxWidget *fluxView;
 	QString nowSelectIP;
+	MainWindow *mainWindow;
 };
 
 #endif	// FLUXVIEWWIDGET_H_
