@@ -35,6 +35,7 @@ public:
 	bool addGroupItem(QString strTitle);
 	bool delGroupItem(QString strTitle);
 	bool addComputerItem(QString strGroup, QString strTitle, bool isOnline);
+	bool moveComputerItem(QString strTitle, QString strNewGroup);
 	bool removeComputerItem(QString strComputer);
 
 	QString strNowSelectIP;

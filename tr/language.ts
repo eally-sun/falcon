@@ -134,9 +134,59 @@ $&gt;</translation>
 <context>
     <name>LinkTreeWidget</name>
     <message>
-        <location filename="../src/LinkTreeWidget.cpp" line="36"/>
+        <location filename="../src/LinkTreeWidget.cpp" line="35"/>
         <source>局域网主机管理</source>
         <translation type="unfinished">LAN HostMachine Manage</translation>
+    </message>
+    <message>
+        <location filename="../src/LinkTreeWidget.cpp" line="271"/>
+        <source>增加组</source>
+        <translation type="unfinished">Add Group</translation>
+    </message>
+    <message>
+        <location filename="../src/LinkTreeWidget.cpp" line="273"/>
+        <source>删除组</source>
+        <translation type="unfinished">删除分组</translation>
+    </message>
+    <message>
+        <location filename="../src/LinkTreeWidget.cpp" line="278"/>
+        <source>移动至..</source>
+        <translation type="unfinished">Move to..</translation>
+    </message>
+    <message>
+        <location filename="../src/LinkTreeWidget.cpp" line="293"/>
+        <source>添加分组</source>
+        <translation type="unfinished">Add Group</translation>
+    </message>
+    <message>
+        <location filename="../src/LinkTreeWidget.cpp" line="294"/>
+        <source>要添加的组名:</source>
+        <translation type="unfinished">New Group Name:</translation>
+    </message>
+    <message>
+        <location filename="../src/LinkTreeWidget.cpp" line="302"/>
+        <source>默认组</source>
+        <translation type="unfinished">Default</translation>
+    </message>
+    <message>
+        <location filename="../src/LinkTreeWidget.cpp" line="303"/>
+        <source>不允许的操作</source>
+        <translation type="unfinished">Now Allow</translation>
+    </message>
+    <message>
+        <location filename="../src/LinkTreeWidget.cpp" line="303"/>
+        <source>很抱歉，默认组不允许被删除。</source>
+        <translation type="unfinished">Sorry, Default Cannot be delete.</translation>
+    </message>
+    <message>
+        <location filename="../src/LinkTreeWidget.cpp" line="306"/>
+        <source>您确认删除分组 &lt;font color=&quot;red&quot;&gt;%1&lt;/font&gt; 吗？(分组成员将被移至默认组)</source>
+        <translation type="unfinished">Really Delete Group &lt;font color=&quot;red&quot;&gt;%1&lt;/font&gt; ？(It &apos;s Client Will Move to Default)</translation>
+    </message>
+    <message>
+        <location filename="../src/LinkTreeWidget.cpp" line="308"/>
+        <source>删除分组</source>
+        <translation type="unfinished">Delete Group</translation>
     </message>
 </context>
 <context>
@@ -307,7 +357,7 @@ $&gt;</translation>
     </message>
     <message>
         <location filename="../src/MainWindow.cpp" line="500"/>
-        <location filename="../src/MainWindow.cpp" line="696"/>
+        <location filename="../src/MainWindow.cpp" line="698"/>
         <source>Falcon 企业网络监控系统</source>
         <translation type="unfinished">Falcon Network Monitoring System</translation>
     </message>
@@ -316,17 +366,17 @@ $&gt;</translation>
         <translation type="obsolete">Try to connect </translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="670"/>
+        <location filename="../src/MainWindow.cpp" line="671"/>
         <source>尝试手动连接服务器 </source>
         <translation type="unfinished">Try to connect</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="897"/>
+        <location filename="../src/MainWindow.cpp" line="899"/>
         <source>自动开始在局域网里寻找服务器...</source>
         <translation type="unfinished">Auto search server...</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="942"/>
+        <location filename="../src/MainWindow.cpp" line="944"/>
         <source>自动连接服务器 </source>
         <translation type="unfinished">Auto Connect</translation>
     </message>
