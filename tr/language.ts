@@ -40,12 +40,12 @@
         <translation type="unfinished">Please choose the IP which you want to control!</translation>
     </message>
     <message>
-        <location filename="../src/ControlSocket.cpp" line="192"/>
+        <location filename="../src/ControlSocket.cpp" line="200"/>
         <source>连接服务器错误：</source>
         <translation type="unfinished">Connect Server Error:</translation>
     </message>
     <message>
-        <location filename="../src/ControlSocket.cpp" line="193"/>
+        <location filename="../src/ControlSocket.cpp" line="201"/>
         <source>  连接服务器错误：</source>
         <translation type="unfinished">Connect Server Error:</translation>
     </message>
@@ -53,22 +53,22 @@
 <context>
     <name>FluxViewWidget</name>
     <message>
-        <location filename="../src/FluxViewWidget.cpp" line="29"/>
+        <location filename="../src/FluxViewWidget.cpp" line="32"/>
         <source>上传速度：0 KB/s</source>
         <translation type="unfinished">Upload Speed: 0 KB/s</translation>
     </message>
     <message>
-        <location filename="../src/FluxViewWidget.cpp" line="30"/>
+        <location filename="../src/FluxViewWidget.cpp" line="33"/>
         <source>下载速度: 0 KB/s</source>
         <translation type="unfinished">Download Speed: 0 KB/s</translation>
     </message>
     <message>
-        <location filename="../src/FluxViewWidget.cpp" line="66"/>
+        <location filename="../src/FluxViewWidget.cpp" line="69"/>
         <source>上传速度：%1 KB/s</source>
         <translation type="unfinished">Upload Speed: %1 KB/s</translation>
     </message>
     <message>
-        <location filename="../src/FluxViewWidget.cpp" line="67"/>
+        <location filename="../src/FluxViewWidget.cpp" line="70"/>
         <source>下载速度: %1 KB/s</source>
         <translation type="unfinished">Download Speed: %1 KB/s</translation>
     </message>
@@ -76,9 +76,45 @@
 <context>
     <name>FluxWidget</name>
     <message>
-        <location filename="../src/FluxWidget.cpp" line="29"/>
+        <location filename="../src/FluxWidget.cpp" line="34"/>
         <source>客户端流量变化图</source>
         <translation type="unfinished">Client Flux Picture</translation>
+    </message>
+    <message>
+        <location filename="../src/FluxWidget.cpp" line="45"/>
+        <source>时间 / s</source>
+        <translation type="unfinished">Time /s</translation>
+    </message>
+    <message>
+        <location filename="../src/FluxWidget.cpp" line="52"/>
+        <source>流量 / KB</source>
+        <translation type="unfinished">Flux /KB</translation>
+    </message>
+    <message>
+        <location filename="../src/FluxWidget.cpp" line="71"/>
+        <source>上传速率</source>
+        <translation type="unfinished">Upload Speed</translation>
+    </message>
+    <message>
+        <location filename="../src/FluxWidget.cpp" line="84"/>
+        <source>下载速率</source>
+        <translation type="unfinished">Download Speed</translation>
+    </message>
+    <message>
+        <location filename="../src/FluxWidget.cpp" line="115"/>
+        <location filename="../src/FluxWidget.cpp" line="123"/>
+        <source> 客户端 </source>
+        <translation type="unfinished"> Client </translation>
+    </message>
+    <message>
+        <location filename="../src/FluxWidget.cpp" line="115"/>
+        <source>下载流量超过阀值一次!</source>
+        <translation type="unfinished">Download Speed Over the Setting!</translation>
+    </message>
+    <message>
+        <location filename="../src/FluxWidget.cpp" line="123"/>
+        <source>上传流量超过阀值一次!</source>
+        <translation type="unfinished">Upload Speed Over the Setting!</translation>
     </message>
 </context>
 <context>
@@ -212,152 +248,152 @@ $&gt;</translation>
         <translation type="unfinished">Falcon is Here. Click on the display.</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="256"/>
+        <location filename="../src/MainWindow.cpp" line="263"/>
         <source>关于 Falcan</source>
         <translation type="unfinished">About Falcan</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="257"/>
+        <location filename="../src/MainWindow.cpp" line="264"/>
         <source>&lt;h2&gt;Falcon 企业网络监控系统&lt;/h2&gt;&lt;p&gt;Safe  Stable  Sharp (安全，稳定，敏捷)&lt;p&gt;&lt;h3&gt;一个基于 Windows NT 平台的局域网络管理控制软件，GUI By Qt 4.X 。&lt;/h3&gt;&lt;p&gt;严正声明：本程序仅用于技术研究，任何集体和个人使用该程序造成的任何违法后果由使用者个人承担！&lt;p&gt;Copyright (C) 2013 Hunters </source>
         <translation type="unfinished">&lt;h2&gt;Falcon Network Monitoring System&lt;/h2&gt;&lt;p&gt;Safe  Stable  Sharp &lt;p&gt;&lt;h3&gt;Based on  Windows NT，GUI By Qt 4.X 。&lt;/h3&gt;&lt;p&gt;Disclaimer: this procedure is used only for technology research, any collective or individual to use the program for any illegal consequences shall be borne by the user&apos;s personal
 ！&lt;p&gt;Copyright (C) 2013 Hunters</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="280"/>
+        <location filename="../src/MainWindow.cpp" line="287"/>
         <source>正向连接服务端</source>
         <translation type="unfinished">Connect Server</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="281"/>
+        <location filename="../src/MainWindow.cpp" line="288"/>
         <source>  连接端口</source>
         <translation type="unfinished">Port</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="289"/>
+        <location filename="../src/MainWindow.cpp" line="296"/>
         <source>您要手动连接的服务器IP地址</source>
         <translation type="unfinished">Connect Server Whit IP</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="294"/>
+        <location filename="../src/MainWindow.cpp" line="301"/>
         <source>您要手动连接的服务器端口</source>
         <translation type="unfinished">Port</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="296"/>
+        <location filename="../src/MainWindow.cpp" line="303"/>
         <source>连接服务端</source>
         <translation type="unfinished">Connect Server</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="344"/>
+        <location filename="../src/MainWindow.cpp" line="351"/>
         <source>搜索服务端</source>
         <translation type="unfinished">Search Server</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="346"/>
+        <location filename="../src/MainWindow.cpp" line="353"/>
         <source>自动搜索服务器</source>
         <translation type="unfinished">Auto Searh Server</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="349"/>
-        <location filename="../src/MainWindow.cpp" line="351"/>
+        <location filename="../src/MainWindow.cpp" line="356"/>
+        <location filename="../src/MainWindow.cpp" line="358"/>
         <source>程序设置</source>
         <translation type="unfinished">Setting</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="354"/>
-        <location filename="../src/MainWindow.cpp" line="356"/>
+        <location filename="../src/MainWindow.cpp" line="361"/>
+        <location filename="../src/MainWindow.cpp" line="363"/>
         <source>退出程序</source>
         <translation type="unfinished">Exit</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="359"/>
-        <location filename="../src/MainWindow.cpp" line="361"/>
+        <location filename="../src/MainWindow.cpp" line="366"/>
+        <location filename="../src/MainWindow.cpp" line="368"/>
         <source>关于本程序</source>
         <translation type="unfinished">About us</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="364"/>
+        <location filename="../src/MainWindow.cpp" line="371"/>
         <source>连接总览</source>
         <translation type="unfinished">Connect View</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="366"/>
+        <location filename="../src/MainWindow.cpp" line="373"/>
         <source>客户端连接总览</source>
         <translation type="unfinished">Client OverView</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="369"/>
+        <location filename="../src/MainWindow.cpp" line="376"/>
         <source>屏幕捕获</source>
         <translation type="unfinished">Screen Shot</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="371"/>
+        <location filename="../src/MainWindow.cpp" line="378"/>
         <source>捕获被控端的屏幕</source>
         <translation type="unfinished">Shot the screen</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="374"/>
+        <location filename="../src/MainWindow.cpp" line="381"/>
         <source>流量监控</source>
         <translation type="unfinished">Flux View</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="376"/>
+        <location filename="../src/MainWindow.cpp" line="383"/>
         <source>客户端流量监控</source>
         <translation type="unfinished">Client Flux View</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="379"/>
+        <location filename="../src/MainWindow.cpp" line="386"/>
         <source>进程管理</source>
         <translation type="unfinished">Process Manage</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="381"/>
+        <location filename="../src/MainWindow.cpp" line="388"/>
         <source>客户端进程管理</source>
         <translation type="unfinished">Client Process Manage</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="384"/>
+        <location filename="../src/MainWindow.cpp" line="391"/>
         <source>远程CMD</source>
         <translation type="unfinished">Remote CMD</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="386"/>
+        <location filename="../src/MainWindow.cpp" line="393"/>
         <source>远程执行CMD命令</source>
         <translation type="unfinished">Remote CMD</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="389"/>
+        <location filename="../src/MainWindow.cpp" line="396"/>
         <source>信息查看</source>
         <translation type="unfinished">Info View</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="391"/>
+        <location filename="../src/MainWindow.cpp" line="398"/>
         <source>查看客户端信息和处理日志</source>
         <translation type="unfinished">View the client &apos;s info</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="408"/>
+        <location filename="../src/MainWindow.cpp" line="415"/>
         <source>文件</source>
         <translation type="unfinished">File</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="413"/>
+        <location filename="../src/MainWindow.cpp" line="420"/>
         <source>设置</source>
         <translation type="unfinished">Setting</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="416"/>
+        <location filename="../src/MainWindow.cpp" line="423"/>
         <source>帮助</source>
         <translation type="unfinished">Help</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="433"/>
+        <location filename="../src/MainWindow.cpp" line="440"/>
         <source>工具栏</source>
         <translation type="unfinished">Tools</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="500"/>
-        <location filename="../src/MainWindow.cpp" line="698"/>
+        <location filename="../src/MainWindow.cpp" line="507"/>
+        <location filename="../src/MainWindow.cpp" line="708"/>
         <source>Falcon 企业网络监控系统</source>
         <translation type="unfinished">Falcon Network Monitoring System</translation>
     </message>
@@ -366,17 +402,17 @@ $&gt;</translation>
         <translation type="obsolete">Try to connect </translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="671"/>
+        <location filename="../src/MainWindow.cpp" line="681"/>
         <source>尝试手动连接服务器 </source>
         <translation type="unfinished">Try to connect</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="899"/>
+        <location filename="../src/MainWindow.cpp" line="936"/>
         <source>自动开始在局域网里寻找服务器...</source>
         <translation type="unfinished">Auto search server...</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="944"/>
+        <location filename="../src/MainWindow.cpp" line="981"/>
         <source>自动连接服务器 </source>
         <translation type="unfinished">Auto Connect</translation>
     </message>
@@ -589,6 +625,26 @@ $&gt;</translation>
         <location filename="../ui/SettingDialog.ui" line="353"/>
         <source>English</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message utf8="true">
+        <location filename="../ui/SettingDialog.ui" line="387"/>
+        <source>流量阀值设置</source>
+        <translation type="unfinished">Flux Setting</translation>
+    </message>
+    <message utf8="true">
+        <location filename="../ui/SettingDialog.ui" line="402"/>
+        <source>上传(KB)</source>
+        <translation type="unfinished">Upload(KB)</translation>
+    </message>
+    <message utf8="true">
+        <location filename="../ui/SettingDialog.ui" line="419"/>
+        <source>下载(KB)</source>
+        <translation type="unfinished">Download(KB)</translation>
+    </message>
+    <message utf8="true">
+        <location filename="../ui/SettingDialog.ui" line="436"/>
+        <source>报警时间(s)</source>
+        <translation type="unfinished">Times(s)</translation>
     </message>
     <message utf8="true">
         <location filename="../ui/SettingDialog.ui" line="295"/>

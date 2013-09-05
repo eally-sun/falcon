@@ -1,0 +1,193 @@
+18:13:09:797 Debug Info: 创建主窗口
+  18:13:09:901 Debug Info: MainStackWidget 控件初始化
+  18:13:09:907 Debug Info: MainListWidget 控件初始化
+  18:13:09:909 Debug Info: ScreenViewWidget 控件初始化
+  18:13:09:958 Debug Info: FluxViewWidget 控件初始化
+  18:13:09:981 Debug Info: FluxWidget 控件初始化
+  18:13:09:984 Debug Info: LinkProcessWidget 控件初始化
+  18:13:09:988 Debug Info: ProcessTreeView 控件初始化
+  18:13:10:005 Debug Info: LinkCmdWidget 控件初始化
+  18:13:10:017 Debug Info: InfoWidget 控件初始化
+  18:13:10:045 Debug Info: LinkTreeWidget 控件初始化
+  18:13:10:998 Debug Info: 尝试连接服务器 "true" : 1 
+  18:13:13:747 Debug Info: 服务器套接字错误： "Host not found" 
+  18:13:14:236 Debug Info: 显示主窗口
+  18:13:16:831 Debug Info: 检测类型错误 XML Error: "Encountered incorrectly encoded content." 
+  18:13:19:840 Debug Info: 检测类型错误 XML Error: "Encountered incorrectly encoded content." 
+  18:13:22:850 Debug Info: 检测类型错误 XML Error: "Encountered incorrectly encoded content." 
+  18:13:43:525 Debug Info: 创建主窗口
+  18:13:43:603 Debug Info: MainStackWidget 控件初始化
+  18:13:43:608 Debug Info: MainListWidget 控件初始化
+  18:13:43:609 Debug Info: ScreenViewWidget 控件初始化
+  18:13:43:665 Debug Info: FluxViewWidget 控件初始化
+  18:13:43:689 Debug Info: FluxWidget 控件初始化
+  18:13:43:692 Debug Info: LinkProcessWidget 控件初始化
+  18:13:43:695 Debug Info: ProcessTreeView 控件初始化
+  18:13:43:712 Debug Info: LinkCmdWidget 控件初始化
+  18:13:43:722 Debug Info: InfoWidget 控件初始化
+  18:13:43:749 Debug Info: LinkTreeWidget 控件初始化
+  18:13:44:583 Debug Info: 尝试连接服务器 "192.168.0.200" : 8086 
+  18:13:44:669 Debug Info: "2013-09-05T18:13:44" 成功连接到服务器
+  18:13:44:678 Debug Info: 向服务端发送数据 "<?xml version="1.0" encoding="UTF-8"?>
+<falcon type="20">
+    <ip></ip>
+    <info></info>
+</falcon>
+" 
+  18:13:44:955 Debug Info: 显示主窗口
+  18:13:45:060 Debug Info: 消息识别为客户端列表信息
+  18:13:45:550 Debug Info: 消息识别为流量信息
+  18:13:46:566 Debug Info: 消息识别为流量信息
+  18:13:47:577 Debug Info: 消息识别为流量信息
+  18:13:48:592 Debug Info: 消息识别为流量信息
+  18:13:48:968 Debug Info: 向服务端发送数据 "<?xml version="1.0" encoding="UTF-8"?>
+<falcon type="23">
+    <ip>192.168.0.200</ip>
+    <info></info>
+</falcon>
+" 
+  18:13:48:969 Debug Info: 当前列表框选择的IP更新为： "192.168.0.200" 
+  18:13:49:074 Debug Info: 接收数据不完整。继续读取
+  18:13:49:075 Debug Info: 接收数据不完整。继续读取
+  18:13:49:076 Debug Info: 接收数据不完整。继续读取
+  18:13:49:076 Debug Info: 接收数据不完整。继续读取
+  18:13:49:078 Debug Info: 消息识别为客户端进程信息
+  18:13:49:622 Debug Info: 消息识别为流量信息
+  18:13:49:739 Debug Info: 当前选择进程： 9 "lsm.exe" PID: "740" 
+  18:13:50:625 Debug Info: 消息识别为流量信息
+  18:13:51:331 Debug Info: 当前选择进程： 60 "Falcon-Client.exe" PID: "3584" 
+  18:13:51:638 Debug Info: 消息识别为流量信息
+  18:13:52:652 Debug Info: 消息识别为流量信息
+  18:13:53:363 Debug Info: 当前选择进程： 60 "Falcon-Client.exe" PID: "3584" 
+  18:13:53:680 Debug Info: 消息识别为流量信息
+  18:13:54:681 Debug Info: 消息识别为流量信息
+  18:13:55:037 Debug Info: 当前删除进程： 60 "Falcon-Client.exe" 
+  18:13:55:038 Debug Info: 向服务端发送数据 "<?xml version="1.0" encoding="UTF-8"?>
+<falcon type="28">
+    <ip>192.168.0.200</ip>
+    <info>3584</info>
+</falcon>
+" 
+  18:13:55:273 Debug Info: 消息识别为客户端上报处理结果信息
+  18:13:55:274 Debug Info: "<?xml version="1.0"?>
+<falcon type="2">
+  <date>2013-09-05</date>
+  <time>18:13:56</time>
+  <ip>192.168.0.200</ip>
+  <info>PID&#x4E3A; 3584 &#x7684;&#x8FDB;&#x7A0B;&#x7ED3;&#x675F;&#x6210;&#x529F;&#xFF01;</info>
+</falcon>
+" 
+  18:13:55:573 Debug Info: 消息识别为客户端离线包信息
+  18:13:55:575 Debug Info: 当前列表框选择的IP更新为： "" 
+  18:14:02:768 Debug Info: 消息识别为新用户连接包信息
+  18:14:48:432 Debug Info: 创建主窗口
+  18:14:48:504 Debug Info: MainStackWidget 控件初始化
+  18:14:48:506 Debug Info: MainListWidget 控件初始化
+  18:14:48:506 Debug Info: ScreenViewWidget 控件初始化
+  18:14:48:583 Debug Info: FluxViewWidget 控件初始化
+  18:14:48:602 Debug Info: FluxWidget 控件初始化
+  18:14:48:606 Debug Info: LinkProcessWidget 控件初始化
+  18:14:48:609 Debug Info: ProcessTreeView 控件初始化
+  18:14:48:625 Debug Info: LinkCmdWidget 控件初始化
+  18:14:48:640 Debug Info: InfoWidget 控件初始化
+  18:14:48:677 Debug Info: LinkTreeWidget 控件初始化
+  18:14:49:307 Debug Info: 尝试连接服务器 "192.168.0.200" : 8086 
+  18:14:49:325 Debug Info: "2013-09-05T18:14:49" 成功连接到服务器
+  18:14:49:328 Debug Info: 向服务端发送数据 "<?xml version="1.0" encoding="UTF-8"?>
+<falcon type="20">
+    <ip></ip>
+    <info></info>
+</falcon>
+" 
+  18:14:49:394 Debug Info: 显示主窗口
+  18:14:49:466 Debug Info: 消息识别为客户端列表信息
+  18:14:49:980 Debug Info: 消息识别为流量信息
+  18:14:50:995 Debug Info: 消息识别为流量信息
+  18:14:52:008 Debug Info: 消息识别为流量信息
+  18:14:53:023 Debug Info: 消息识别为流量信息
+  18:14:53:366 Debug Info: 向服务端发送数据 "<?xml version="1.0" encoding="UTF-8"?>
+<falcon type="23">
+    <ip>192.168.0.200</ip>
+    <info></info>
+</falcon>
+" 
+  18:14:53:367 Debug Info: 当前列表框选择的IP更新为： "192.168.0.200" 
+  18:14:53:468 Debug Info: 接收数据不完整。继续读取
+  18:14:53:468 Debug Info: 接收数据不完整。继续读取
+  18:14:53:469 Debug Info: 接收数据不完整。继续读取
+  18:14:53:469 Debug Info: 接收数据不完整。继续读取
+  18:14:53:470 Debug Info: 消息识别为客户端进程信息
+  18:14:54:037 Debug Info: 消息识别为流量信息
+  18:14:55:052 Debug Info: 消息识别为流量信息
+  18:14:55:371 Debug Info: 当前选择进程： 60 "Falcon-Client.exe" PID: "2592" 
+  18:14:56:068 Debug Info: 消息识别为流量信息
+  18:14:57:081 Debug Info: 消息识别为流量信息
+  18:14:58:094 Debug Info: 消息识别为流量信息
+  18:14:58:123 Debug Info: 当前删除进程： 60 "Falcon-Client.exe" 
+  18:14:58:124 Debug Info: 向服务端发送数据 "<?xml version="1.0" encoding="UTF-8"?>
+<falcon type="28">
+    <ip>192.168.0.200</ip>
+    <info>2592</info>
+</falcon>
+" 
+  18:14:58:327 Debug Info: 消息识别为客户端上报处理结果信息
+  18:14:58:328 Debug Info: "<?xml version="1.0"?>
+<falcon type="2">
+  <date>2013-09-05</date>
+  <time>18:14:59</time>
+  <ip>192.168.0.200</ip>
+  <info>PID&#x4E3A; 2592 &#x7684;&#x8FDB;&#x7A0B;&#x7ED3;&#x675F;&#x6210;&#x529F;&#xFF01;</info>
+</falcon>
+" 
+  18:14:58:638 Debug Info: 消息识别为客户端离线包信息
+  18:14:58:639 Debug Info: 当前列表框选择的IP更新为： "" 
+  18:15:02:613 Debug Info: 消息识别为新用户连接包信息
+  18:15:04:169 Debug Info: 消息识别为流量信息
+  18:15:05:182 Debug Info: 消息识别为流量信息
+  18:15:06:196 Debug Info: 消息识别为流量信息
+  18:15:06:620 Debug Info: 向服务端发送数据 "<?xml version="1.0" encoding="UTF-8"?>
+<falcon type="23">
+    <ip>192.168.0.200</ip>
+    <info></info>
+</falcon>
+" 
+  18:15:06:621 Debug Info: 切换标签自动触发发送获取进程信息命令 
+  18:15:06:720 Debug Info: 接收数据不完整。继续读取
+  18:15:06:721 Debug Info: 接收数据不完整。继续读取
+  18:15:06:722 Debug Info: 接收数据不完整。继续读取
+  18:15:06:722 Debug Info: 接收数据不完整。继续读取
+  18:15:06:723 Debug Info: 消息识别为客户端进程信息
+  18:15:07:272 Debug Info: 消息识别为流量信息
+  18:15:08:225 Debug Info: 消息识别为流量信息
+  18:15:08:667 Debug Info: 当前选择进程： 60 "Falcon-Client.exe" PID: "5124" 
+  18:15:09:241 Debug Info: 消息识别为流量信息
+  18:15:10:195 Debug Info: 当前删除进程： 60 "Falcon-Client.exe" 
+  18:15:10:195 Debug Info: 向服务端发送数据 "<?xml version="1.0" encoding="UTF-8"?>
+<falcon type="28">
+    <ip>192.168.0.200</ip>
+    <info>5124</info>
+</falcon>
+" 
+  18:15:10:402 Debug Info: 消息识别为流量信息
+  18:15:10:453 Debug Info: 消息识别为客户端上报处理结果信息
+  18:15:10:454 Debug Info: "<?xml version="1.0"?>
+<falcon type="2">
+  <date>2013-09-05</date>
+  <time>18:15:11</time>
+  <ip>192.168.0.200</ip>
+  <info>PID&#x4E3A; 5124 &#x7684;&#x8FDB;&#x7A0B;&#x7ED3;&#x675F;&#x6210;&#x529F;&#xFF01;</info>
+</falcon>
+" 
+  18:15:10:765 Debug Info: 消息识别为客户端离线包信息
+  18:15:16:740 Debug Info: 向服务端发送数据 "<?xml version="1.0" encoding="UTF-8"?>
+<falcon type="23">
+    <ip>192.168.0.200</ip>
+    <info></info>
+</falcon>
+" 
+  18:15:16:740 Debug Info: 切换标签自动触发发送获取进程信息命令 
+  18:15:21:856 Debug Info: 消息识别为新用户连接包信息
+  18:15:23:412 Debug Info: 消息识别为流量信息
+  18:15:24:426 Debug Info: 消息识别为流量信息
+  18:15:25:441 Debug Info: 消息识别为流量信息
+  
